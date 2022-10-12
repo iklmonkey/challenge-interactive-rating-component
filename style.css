@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+.container {
+    /* border: 1px solid red; temporary border for design phase*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(217, 16%, 16%);
+    border-radius: 1.5rem;
+    width: 80%;
+    max-width: 20.5rem;
+    min-width: 17.5rem;
+    /* height: 80%; */
+    padding: 1.9rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* --------------------------------------------*/
+/* sets all the attributes for the card rating */
+/* --------------------------------------------*/
+.icon {
+    border-radius: 50px;
+    width: fit-content;
+    background-color: hsl(220, 15%, 20%);
+    padding: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.7rem;
+    margin-top: 2.3rem;
+}
+
+.para {
+    color: hsl(217, 12%, 63%);
+    font-size: .9rem;
+    margin-top: 1.3rem;
+    /* letter-spacing: 1rem; */
+    line-height: 1.5rem;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+}
+
+.rating-button {
+    padding: 1rem;
+    background-color: hsl(220, 15%, 20%);
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.submit {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    padding: .9rem;
+    text-align: center;
+    border-radius: 5rem;
+    margin-top: 1.8rem;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    letter-spacing: .1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+/* -----------------------------------------------------*/
+/* sets the hover attributes for the submit and ratings */
+/* -----------------------------------------------------*/
+.submit:hover {
+    color: hsl(25, 100%, 50%);
+    background-color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    cursor: pointer;
+    /* box-shadow: hsl(25, 97%, 53%) 0px 20px 30px -10px; */
+    box-shadow: hsl(25, 97%, 53%) 6px 2px 8px 0px, rgba(255, 255, 255, 0.8) -3px -2px 8px 0px;
+    /* box-shadow: hsl(25, 97%, 53%) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+
+.rating-button:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    /* box-shadow: hsl(25, 97%, 53%) 0px 20px 30px -10px; */
+
+}
+
+/* --------------------------------------------*/
+/* sets the active class attributes for the js */
+/* --------------------------------------------*/
+.active {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+/* -----------------------------------------------*/
+/* sets all the attributes for the card submitted */
+/* -----------------------------------------------*/
+.icon2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback {
+    width: 9rem;
+    height: auto;
+    margin-top: .4rem;
+}
+
+.out-of-button {
+    background-color: hsl(220, 15%, 20%);
+    color: hsl(25, 100%, 60%);
+    margin: 0 3.3rem;
+    padding: .7rem;
+    border-radius: 5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: .9rem;
+}
+
+.heading2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    margin-top: 1.7rem;
+    text-align: center;
+}
+
+.para2 {
+    color: hsl(217, 12%, 63%);
+    font-size: .9rem;
+    margin-top: 1.2rem;
+    line-height: 1.3rem;
+    text-align: center;
+}
+
+/* --------------------------------------------*/
+/* sets the attributes for the attribution div */
+/* --------------------------------------------*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
